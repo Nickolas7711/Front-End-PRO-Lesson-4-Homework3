@@ -2,13 +2,13 @@
 calculationOperator = null;
 
 do {
-    calculationOperator = prompt('Введите операцию (+, -, *, /)');
+    calculationOperator = prompt('Введіть операцію (+, -, *, /)');
 } while (calculationOperator !== '+' && calculationOperator !== '-' && calculationOperator !== '*' && calculationOperator !== '/');
 
 numberOperands = null;
 
 do {
-    numberOperands = parseInt(prompt('Введите количество операндов (2-7)'));
+    numberOperands = parseInt(prompt('Введіть кількість операндів (2-7)'));
 } while (isNaN(numberOperands) || numberOperands < 2 || numberOperands > 7);
 
 result = null;
@@ -19,7 +19,7 @@ while (operandNum <= numberOperands) {
 valueOperand = null;
 
 do {
-    valueOperand = parseInt(prompt(`Введите операнд ${operandNum}`));
+    valueOperand = parseInt(prompt(`Введіть операнд ${operandNum}`));
 } while (isNaN(valueOperand));
 
 switch (calculationOperator) {
